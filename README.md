@@ -5,7 +5,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 ### Screenshot
 
 ![](./images/Screenshot%202023-09-30%20at%2001.02.53.png)
-![](./images/Screenshot%202023-09-30%20at%2001.05.05.png)
+![](./images/Screenshot%202023-09-30%20at%2001.05.05.png =250x250)
 
 ### Links
 
