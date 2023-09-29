@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+body {
+	font-family: "Rubik", sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--Light-Magenta: hsl(293, 100%, 63%);
+	--Light-Violet: hsl(264, 100%, 61%);
+	--Light-Grayish-Violet: hsl(270, 20%, 96%);
+	--Pale-Violet: hsl(276, 100%, 81%);
+	--Moderate-Violet: hsl(276, 55%, 52%);
+	--chat-bg: #ede5f2;
+	--Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+	--Very-Light-Magenta: hsl(289, 100%, 72%);
+	--Grayish-Blue: hsl(206, 6%, 79%);
+	--Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+	--Dark-Grayish-Violet: hsl(270, 7%, 64%);
+}
+
+/* Background images */
+
+.bg,
+.bg-pale {
+	width: 500px;
+	height: 1000px;
+	border-radius: 400px;
+	z-index: -1;
+}
+.bg {
+	position: absolute;
+	top: -400px;
+	left: -300px;
+	@media (min-width: 992px) {
+		width: 500px;
+		top: -300px;
+		left: -100px;
+	}
+	background-image: linear-gradient(
+		to bottom,
+		var(--Light-Magenta) 30%,
+		var(--Light-Violet)
+	);
+}
+.bg-pale {
+	position: fixed;
+	bottom: -500px;
+	right: -300px;
+	@media (min-width: 992px) {
+		width: 500px;
+		bottom: -300px;
+		right: -100px;
+	}
+	background-color: #f7f5fa;
+}
+
+/* main section container */
+.container {
+	@media (min-width: 992px) {
+		gap: 8rem;
+		padding-top: 3rem;
+	}
+}
+
+/* Phone outer style */
+.phone-container {
+	width: 300px;
+	height: 600px;
+	background-color: #fff;
+	padding: 10px;
+	position: relative;
+	margin-bottom: 3rem;
+}
+.phone {
+	background-color: var(--Light-Grayish-Violet);
+	width: 280px;
+	height: 580px;
+	padding: 0 !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.phone-speaker {
+	height: 2rem;
+	width: 8rem;
+	border-radius: 3rem;
+	position: absolute;
+	background-color: #fff;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+/* Phone head section */
+.phone-top-section,
+.offer {
+	background-image: linear-gradient(
+		to right,
+		var(--Light-Magenta),
+		var(--Light-Violet)
+	);
+}
+
+.profile-pic {
+	width: 30px;
+	height: 30px;
+	padding: 3px;
+	background-color: var(--Light-Grayish-Violet);
+	border-radius: 50%;
+}
+#subhead {
+	color: var(--Pale-Violet);
+	font-size: 0.5rem;
+	line-height: 10px;
+}
+.ui-section::before,
+.phone-top-section::after {
+	font-family: "bootstrap-icons";
+	font-size: 1rem;
+	font-weight: bolder;
+	color: var(--Light-Grayish-Violet);
+}
+.ui-section::before {
+	content: "\F27A";
+}
+
+.phone-top-section::after {
+	content: "\F5D3";
+}
+
+/* Chat section */
+.chat-left p {
+	background-color: var(--chat-bg);
+	color: var(--Moderate-Violet);
+	border-radius: 30px 30px 30px 0;
+	width: 60%;
+	padding: 0.5rem;
+	font-size: 0.5rem;
+	margin-bottom: 5px;
+}
+.chat-right {
+	align-self: flex-end;
+}
+
+.chat-right img {
+	width: 40px;
+	height: 40px;
+	border-radius: 15px;
+	margin: 5px;
+}
+.chat-right p {
+	background-color: #fff;
+	color: var(--Desaturated-Dark-Violet);
+	width: 60%;
+	border-radius: 30px 30px 0 30px;
+	padding: 0.5rem;
+	font-size: 0.5rem;
+	margin-bottom: 5px;
+}
+
+.offer {
+	color: var(--chat-bg) !important;
+	width: 75% !important;
+}
+.offer span:first-child::before {
+	font-family: "bootstrap-icons";
+	content: "\F28A";
+	margin-right: 1rem;
+	font-size: 1rem;
+	color: var(--Very-Light-Magenta) !important;
+}
+.offer span:last-child {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+/* phone text message section */
+.message-section {
+	position: relative;
+}
+.message-section img {
+	width: 38px;
+	height: auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.form-control::placeholder {
+	color: var(--Grayish-Blue);
+	font-size: 0.8rem;
+}
+
+/* main section - heading and text*/
+
+h1 {
+	color: var(--Very-Dark-Desaturated-Violet) !important;
+}
+.main-paragraph {
+	color: var(--Dark-Grayish-Violet);
+}
+.main-text {
+	width: 300px;
+	height: 300px;
+	@media (min-width: 992px) {
+		height: 600px;
+	}
+}
