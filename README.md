@@ -9,7 +9,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://sumeyye-mete.github.io/Chat-App-css/)
+- Live Site URL:(https://sumeyye-mete.github.io/Chat-App-css/)
 
 ### Built with
 
