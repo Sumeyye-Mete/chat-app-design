@@ -10,6 +10,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 ### Links
 
 - Live Site URL:(https://sumeyye-mete.github.io/chat-app-design/)
+- git clone : https://github.com/Sumeyye-Mete/chat-app-design.git
 
 ### Built with
 
